@@ -4,3 +4,6 @@ hdfs_bindings.node
 hadoop_cluster.xml
 core-site.xml
 
+.settings
+.project
+npm-debug.log

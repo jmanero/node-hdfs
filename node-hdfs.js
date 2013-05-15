@@ -1,4 +1,4 @@
-var sys          = require('sys')
+var util          = require('util')
   , fs           = require('fs')
   , EventEmitter = require('events').EventEmitter
   , HDFSBindings = require('./hdfs_bindings')
@@ -279,7 +279,7 @@ var HDFSReader = function(path, bufferSize) {
   EventEmitter.call(this);
 }
 
-sys.inherits(HDFSReader, EventEmitter);
+util.inherits(HDFSReader, EventEmitter);
 
 var HDFSWritter = function(path, mode) {
   var self = this;
@@ -347,4 +347,4 @@ var HDFSWritter = function(path, mode) {
   EventEmitter.call(this);
 }
 
-sys.inherits(HDFSWritter, EventEmitter);
+util.inherits(HDFSWritter, EventEmitter);
